@@ -1,6 +1,9 @@
 package com.example.demo.services;
 
+import com.example.demo.data.dto.PersonDTO;
 import com.example.demo.exception.ResourceNotFoundException;
+import static com.example.demo.mapper.ObjectMapper.parseListObjects;
+import static com.example.demo.mapper.ObjectMapper.parseObject;
 import com.example.demo.model.Person;
 import com.example.demo.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,38 +23,30 @@ public class PersonServices {
 
     private Logger logger = Logger.getLogger(PersonServices.class.getName());
 
-    public List<Person> findAll() {
+    public List<PersonDTO> findAll() {
         logger.info("Find all people");
 
-        return personRepository.findAll();
+        return parseListObjects(personRepository.findAll(), PersonDTO.class);
     }
 
-    public Person findById(Long id) {
+    public PersonDTO findById(Long id) {
         logger.info("Finding one Person by id: " + id);
 
-        return personRepository.findById(id).orElseThrow(
-                () -> new ResourceNotFoundException("No record found for this ID")
-        );
+        return personRepository.findById(id)
+                .map(it -> parseObject(it, PersonDTO.class))
+                .orElseThrow(
+                () -> new ResourceNotFoundException("No record found for this ID"));
     }
 
-    public Person mockPerson(int id) {
-        Person person = new Person();
-        person.setId(counter.incrementAndGet());
-        person.setFirstName("Name " + id);
-        person.setLastName("Lastname " + id);
-        person.setAddress("Local " + id);
-        person.setGender("Male");
-
-        return person;
-    }
-
-    public Person create(Person person) {
+    public PersonDTO create(PersonDTO person) {
         logger.info("Creating person");
 
-        return personRepository.save(person);
+        Person entityToSave = parseObject(person, Person.class);
+
+        return parseObject(personRepository.save(entityToSave), PersonDTO.class);
     }
 
-    public Person update(Person person) {
+    public PersonDTO update(PersonDTO person) {
         logger.info("Updating person");
 
         Person entityToUpdate = personRepository.findById(person.getId())
@@ -62,7 +57,7 @@ public class PersonServices {
         entityToUpdate.setAddress(person.getAddress());
         entityToUpdate.setGender(person.getGender());
 
-        return personRepository.save(person);
+        return parseObject(personRepository.save(entityToUpdate), PersonDTO.class);
     }
 
     public void delete(Long id) {

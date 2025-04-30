@@ -15,3 +15,7 @@ spring:
       show_sql: false
 
     open-in-view: false
+
+logging:
+  level:
+    com.example.demo: DEBUG
