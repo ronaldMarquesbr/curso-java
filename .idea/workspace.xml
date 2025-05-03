@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8db4802-e415-406b-8943-96c101e2cadd" name="Changes" comment="Add section 11 project">
-      <change beforePath="$PROJECT_DIR$/secao-8/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/controllers/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/data/dto/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/data/dto/PersonDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/exception/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/exception/ExceptionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/exception/handler/CustomEntityResponseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/exception/handler/CustomEntityResponseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/mapper/ObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/mapper/ObjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/math/SimpleMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/math/SimpleMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/repository/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/request/converters/NumberConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/request/converters/NumberConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/java/com/example/demo/services/PersonServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/java/com/example/demo/services/PersonServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/test/java/com/example/demo/StartupTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/test/java/com/example/demo/StartupTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/test/java/com/example/demo/unitTests/mapper/ObjectMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/test/java/com/example/demo/unitTests/mapper/ObjectMapperTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secao-8/src/test/java/com/example/demo/unitTests/mapper/mocks/MockPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/secao-11/src/test/java/com/example/demo/unitTests/mapper/mocks/MockPerson.java" afterDir="false" />
-    </list>
+    <list default="true" id="f8db4802-e415-406b-8943-96c101e2cadd" name="Changes" comment="Add section 12 project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +65,7 @@
       <workItem from="1745444613413" duration="28000" />
       <workItem from="1745718904824" duration="25000" />
       <workItem from="1746098937326" duration="139000" />
+      <workItem from="1746103199243" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Add section 11 project">
       <option name="closed" value="true" />
@@ -93,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746099019868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add section 12 project">
+      <option name="closed" value="true" />
+      <created>1746103221409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746103221409</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add section 11 project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add section 11 project" />
+    <MESSAGE value="Add section 12 project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add section 12 project" />
   </component>
 </project>
